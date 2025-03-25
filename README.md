@@ -15,17 +15,6 @@ A Python GUI application for analyzing depth-dose curves from radiation therapy 
 - **Data Comparison**: Compare planned vs. measured depth-dose curves
 - **Export Options**: Save screen captures and data
 
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/jokh38/RT_tools.git
-cd RT_tools
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
 ## Requirements
 
 - Python 3.6+
