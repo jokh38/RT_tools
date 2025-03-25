@@ -1,10 +1,10 @@
 # Line-dose Analyzer (Range & SOBP)
 
-A Python GUI application for analyzing depth-dose curves from radiation therapy planning and measurement data.
+A Python GUI application for analyzing depth-dose curves from radiation therapy planning (from Raystation) and measurement data (Zebra, IBA).
 
 ## Features
 
-- **Data Import**: Load and analyze TXT (treatment plan) and CSV (measurement) files
+- **Data Import**: Load and analyze TXT (Raystation) and CSV (Zebra, IBA) files
 - **Depth-Dose Visualization**: Plot normalized depth-dose curves with automatic color coding
 - **Key Metrics**: Calculate and display important dosimetric parameters:
   - D90 (range): Depth of distal 90% dose
@@ -19,8 +19,8 @@ A Python GUI application for analyzing depth-dose curves from radiation therapy 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/line-dose-analyzer.git
-cd line-dose-analyzer
+git clone https://github.com/jokh38/RT_tools.git
+cd RT_tools
 
 # Install dependencies
 pip install -r requirements.txt
@@ -50,27 +50,6 @@ pip install -r requirements.txt
    - Right panel: Range and SOBP metrics table
 
 4. Use "Save screen" to capture the entire application window
-
-## Data File Format
-
-### TXT Files (Treatment Plan)
-Text files with depth (cm) and dose (cGy) columns:
-```
-Distance(cm)   Dose (cGy)
-0.01           0.00
-0.02           0.00
-...
-```
-
-### CSV Files (Measurement)
-CSV files with "Curve depth: [mm]" and "Curve gains: [counts]" sections:
-```
-Curve depth: [mm]
-0.0;0.5;1.0;...
-
-Curve gains: [counts]
-0.0;0.5;40.2;...
-```
 
 ## Key Functions
 
